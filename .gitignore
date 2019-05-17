@@ -1,3 +1,8 @@
+# Other
+*.crt
+*.key
+*.pem
+
 # Logs
 logs
 *.log

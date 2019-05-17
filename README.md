@@ -7,5 +7,6 @@ A node script for testing IoT Core ingest over MQTT
 1. Clone repo
 2. Install dependencies
 3. Retrieve Certificates from S3
-4. `node index.js` and monitor from IoT Core console
-5. You can observe the flow via CloudWatch for Lambda and in Dynamo console.
+4. Copy certs into this folder
+5. `node index.js` and monitor from IoT Core console
+6. You can observe the flow via CloudWatch for Lambda and in Dynamo console.
