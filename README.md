@@ -17,10 +17,14 @@ Current schema
 
 ```javascript
 JSON.stringify({
-      id: id,
-      coordinates: [0, 0],
-      Other: "bar"
-})
+      id: 1,
+      coordinates: [0,0]
+      speed: 1,
+      altitude: 1,
+      energy: 1,
+      ts: Date.now(),
+      expiration: Date.now() + 3600
+    })
 ```
 
 If you need to have this modified, please cut an issue in this repo and tag @cmtoomey - I will update and republish shortly.
