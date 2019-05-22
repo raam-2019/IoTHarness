@@ -31,12 +31,18 @@ setInterval(() => {
     //* This is your channel - change this to align with the IoT Core ingestion channel
     "raamracer",
     //* This is your data payload, this will need to get aligned with the Asset Tracking Infrastructure
-    //* Tentative Schema should be {id: id, coordinates: [], metric1: foo, metricN: bar}, one metric per key
+    //* Tentative Schema should be 
+    //* {id: id, coordinates: [], metric1: foo, metricN: bar, timestamp: epoch, expiration: epoch + 360s}
+    //* Ine metric per key
     //* ID is the primary query key for Dynamo
     JSON.stringify({
-      id: id,
-      coordinates: [0, 0],
-      Other: "bar"
+      id: 1,
+      coordinates: [0,0]
+      speed: 1,
+      altitude: 1,
+      energy: 1,
+      ts: Date.now(),
+      expiration: Date.now() + 3600
     })
   );
   id++;
