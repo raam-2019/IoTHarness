@@ -18,7 +18,7 @@ Current schema
 ```javascript
 JSON.stringify({
       id: 1,
-      coordinates: [0,0]
+      coordinates: [0,0],
       speed: 1,
       altitude: 1,
       energy: 1,
