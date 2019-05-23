@@ -22,8 +22,7 @@ JSON.stringify({
       speed: 1,
       altitude: 1,
       energy: 1,
-      ts: Date.now(),
-      expiration: Date.now() + 3600
+      ts: Math.floor(Date.now() / 1000),
     })
 ```
 
