@@ -70,7 +70,9 @@ setInterval(() => {
       eqHeartRate: 0,
       aeroPressure: null,
       androidBattery: 0.92,
-      mo2Battery: null
+      mo2Battery: null,
+      enduranceZone: null,
+      intervalZone: null
     })
   );
   id++;
