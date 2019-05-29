@@ -17,12 +17,20 @@ Current schema
 
 ```javascript
 JSON.stringify({
-      id: 1,
-      coordinates: [0,0],
-      speed: 1,
-      altitude: 1,
-      energy: 1,
-      ts: Math.floor(Date.now() / 1000),
+      altitude: 242.68196,
+      heading: 1.5691032,
+      coordinates: [-88.27844769693911, 43.05908909998834],
+      pressure: 100965.43,
+      eqBreathingRate: 0,
+      cadence: 0,
+      speed: 0.05598415,
+      eqCoreTemp: -1,
+      quality: 4,
+      eqSkinTemp: 25.2,
+      eqHeartRate: 0,
+      temperature: 23.33,
+      id: "0",
+      timestamp: Math.floor(Date.now() / 1000)
     })
 ```
 
