@@ -40,21 +40,38 @@ setInterval(() => {
     //* Ine metric per key
     //* ID is the primary query key for Dynamo
     JSON.stringify({
-      altitude: 242.68196,
-      heading: 1.5691032,
-      coordinates: [-88.27844769693911, 43.05908909998834],
-      pressure: 100965.43,
+      altitude: 345.09564,
+      source: "foo",
+      hemoTotal: null,
+      palt: null,
+      speed: 0,
+      hemoPercent: null,
+      watchBattery: null,
+      pcc: null,
+      temperature: 18.8,
+      power: null,
+      aeroBattery: null,
+      id: "0",
+      ptot: null,
+      timestamp: Math.floor(Date.now() / 1000),
+      watchHeartRate: null,
+      cda: null,
+      heading: 0.9446823,
+      locationQuality: null,
+      coordinates: [-88.27841115184128, 43.05916168726981],
+      pressure: 101368.89,
       eqBreathingRate: 0,
       cadence: 0,
-      speed: 0.05598415,
+      pair: null,
+      quality: null,
+      sensorID: null,
       eqCoreTemp: -1,
-      quality: 4,
-      eqSkinTemp: 25.2,
+      eqSkinTemp: 22.2,
       eqHeartRate: 0,
-      temperature: 23.33,
-      id: "0",
-      timestamp: Math.floor(Date.now() / 1000)
+      aeroPressure: null,
+      androidBattery: 0.92,
+      mo2Battery: null
     })
   );
   id++;
-}, 1000);
+}, 5000);
