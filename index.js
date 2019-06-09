@@ -54,7 +54,6 @@ setInterval(() => {
       id: "0",
       enduranceZone: null,
       ptot: null,
-      timestamp: Math.floor(Date.now() / 1000),
       watchHeartRate: 62,
       watchPressure: 100443.132812,
       cda: null,
@@ -72,7 +71,10 @@ setInterval(() => {
       aeroPressure: null,
       androidBattery: 1,
       watchTemperature: 23.030001,
-      mo2Battery: null
+      mo2Battery: null,
+      timestamp: null,
+      semTimestamp: null,
+      watchTimestamp: null
     })
   );
   id++;
