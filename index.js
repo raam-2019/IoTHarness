@@ -72,7 +72,7 @@ setInterval(() => {
       androidBattery: 1,
       watchTemperature: 23.030001,
       mo2Battery: null,
-      timestamp: null,
+      timestamp: Math.floor(Date.now() / 1000),
       semTimestamp: null,
       watchTimestamp: null
     })
