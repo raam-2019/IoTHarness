@@ -9,10 +9,10 @@ var awsIot = require("aws-iot-device-sdk");
 //
 //These keys can be retrieved from S3
 var device = awsIot.device({
-  keyPath: "../local_IoT_Test/204c2c9eec-private.pem.key",
-  certPath: "../local_IoT_Test/204c2c9eec-certificate.pem.crt",
+  keyPath: "../local_IoT_Test/7e112ca4e0-private.pem.key",
+  certPath: "../local_IoT_Test/7e112ca4e0-certificate.pem.crt",
   caPath: "../local_IoT_Test/AmazonRootCA1.pem",
-  clientId: "testing123",
+  clientId: "testHarness",
   host: "a1f5ieskd1ka9e-ats.iot.us-east-1.amazonaws.com"
 });
 
@@ -28,7 +28,6 @@ device.on("reconnect", () => {
   console.log("reconnected");
 });
 
-let id = 1;
 setInterval(() => {
   console.log(`Publishing:${Math.floor(Date.now() / 1000)}`);
   device.publish(
@@ -51,7 +50,7 @@ setInterval(() => {
       watchSpeed: 0.195945,
       watchAltitude: 243.484406,
       aeroBattery: null,
-      id: "0",
+      id: "9999",
       enduranceZone: null,
       ptot: null,
       watchHeartRate: 62,
@@ -77,5 +76,4 @@ setInterval(() => {
       watchTimestamp: null
     })
   );
-  id++;
 }, 5000);
